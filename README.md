@@ -99,3 +99,8 @@ rugby-performance-analytics-los-cardos/
 ## 👤 Author
 **Santiago Balbarrey**  
 Data Analytics | BI | Sports Analytics
+
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/santiagobalbarrey/)
+
+You can reach me on LinkedIn for feedback, collaboration, or project discussions.
