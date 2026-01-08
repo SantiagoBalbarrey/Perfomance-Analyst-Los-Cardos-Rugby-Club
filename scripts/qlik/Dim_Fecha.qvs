@@ -1,0 +1,8 @@
+DimFecha:
+LOAD
+    FechaId,
+    Round,
+    Mes,
+    Año
+FROM [$(vRoot)/PlantillaCargaCompleta_Rugby.xlsx]
+(ooxml, embedded labels, table is [DimFecha]);

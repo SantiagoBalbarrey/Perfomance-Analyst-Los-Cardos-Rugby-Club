@@ -1,0 +1,6 @@
+DimRival:
+LOAD
+    RivalId,
+    NombreRival
+FROM [$(vRoot)/PlantillaCargaCompleta_Rugby.xlsx]
+(ooxml, embedded labels, table is [DimRival]);

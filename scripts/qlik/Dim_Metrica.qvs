@@ -1,0 +1,7 @@
+DimMetrica:
+LOAD
+    AutoNumberHash256(Categoria & '|' & Metrica) as MetricaId,
+    Categoria as DimCategoria,
+    Metrica as DimMetrica
+FROM [$(vRoot)/PlantillaCargaCompleta_Rugby.xlsx]
+(ooxml, embedded labels, table is [DimMetrica]);

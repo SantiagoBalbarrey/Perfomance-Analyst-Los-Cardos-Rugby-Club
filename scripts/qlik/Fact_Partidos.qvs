@@ -1,0 +1,34 @@
+PlantillaRaw:
+LOAD *
+FROM [$(vRoot)/PlantillaCargaCompleta_Rugby.xlsx]
+(ooxml, embedded labels, table is [PlantillaCarga]);
+
+
+Crosstable (Campo, Valor, 2)
+FactTemp:
+LOAD *
+RESIDENT PlantillaRaw;
+
+
+MapRivalId:
+MAPPING
+LOAD
+    NombreRival,
+    RivalId
+FROM [$(vRoot)/PlantillaCargaCompleta_Rugby.xlsx]
+(ooxml, embedded labels, table is [DimRival]);
+
+
+FactPartido:
+LOAD
+    Num([FechaId]) as FechaId,
+    ApplyMap('MapRivalId', [Rival], -1) as RivalId,
+    SubField(Campo, ' - ', 1) as Categoria,
+    SubField(Campo, ' - ', 2) as Metrica,
+    Num(Replace(Trim(Valor), ',', '.')) as Valor,
+    AutoNumberHash256(SubField(Campo,' - ',2) & '|' & SubField(Campo,' - ',1)) as MetricaId
+RESIDENT FactTemp
+WHERE Len(Trim(Valor))>0;
+
+DROP TABLE PlantillaRaw;
+DROP TABLE FactTemp;
