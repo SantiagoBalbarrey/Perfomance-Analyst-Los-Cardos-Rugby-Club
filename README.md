@@ -2,7 +2,7 @@
 ### LongoMatch Event Data + Qlik Sense Dashboards
 
 
-![Qlik Sense](https://img.shields.io/badge/Qlik%20Sense-009848?style=for-the-badge&logo=qlik&logoColor=white) ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-1A73E8?style=for-the-badge&logo=google-analytics&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white) ![Sports Analytics](https://img.shields.io/badge/Sports%20Analytics-FFB000?style=for-the-badge) ![ETL](https://img.shields.io/badge/ETL-4B8BBE?style=for-the-badge) ![Data Modeling](https://img.shields.io/badge/Data%20Modeling-FF6F00?style=for-the-badge) 
+![Qlik Sense](https://img.shields.io/badge/Qlik%20Sense-009848?style=for-the-badge&logo=qlik&logoColor=white) ![Data Analytics](https://img.shields.io/badge/Data%20Analytics-1A73E8?style=for-the-badge&logo=google-analytics&logoColor=white) ![Sports Analytics](https://img.shields.io/badge/Sports%20Analytics-FFB000?style=for-the-badge) ![ETL](https://img.shields.io/badge/ETL-4B8BBE?style=for-the-badge) ![Data Modeling](https://img.shields.io/badge/Data%20Modeling-FF6F00?style=for-the-badge) 
 
 <p align="center">
   <img src="images/cover/banner_github.png" width="400"/>
@@ -31,6 +31,15 @@ The goal is to automate post‑match reporting and provide actionable insights t
 - Breaks  
 - Discipline  
 
+### Overview
+<img src="dashboards/Torneo%20UNRMDP%20%20-%20Dashboard.png" width="800"/>
+
+### Attack Performance
+<img src="dashboards/Torneo%20UNRMDP%20%20-%20Attacking%20Perfomance.png" width="800"/>
+
+### Set Piece Acquisition
+<img src="dashboards/Torneo%20UNRMDP%20%20-%20Set%20Piece%20Aquisition.png" width="800"/>
+
 ---
 
 ## 🔍 Key Metrics
@@ -55,23 +64,24 @@ The goal is to automate post‑match reporting and provide actionable insights t
 ## 📁 Repository Structure
 
 ```
-rugby-performance-analytics-los-cardos/
+Perfomance-Analyst-Los-Cardos-Rugby-Club/
 │
 ├── scripts/
-│   └── qlik/  
-|       └── FactPartidos.qvs
-|       └── Dim_Fecha.qvs
-|       └── Dim_Rival.qvs
-|       └── Dim_Metrica.qvs
-|       └── Global_Variables.qvs
+│   └── qlik/
+│       ├── Fact_Partidos.qvs
+│       ├── Dim_Fecha.qvs
+│       ├── Dim_Rival.qvs
+│       ├── Dim_Metrica.qvs
+│       └── Global_Variables.qvs
 │
 ├── dashboards/
-│   ├── Overview dashboard/
-│   ├── Attack Performance/
-│   ├── Set Piece Acquisition (Scrum & Lineout)/
-│   ├── Set Piece Launches (Scrum & Lineout)/
-│   ├── Breaks/
-│   └── Discipline/
+│   ├── Torneo UNRMDP - Dashboard.png
+│   ├── Torneo UNRMDP - Attacking Perfomance.png
+│   ├── Torneo UNRMDP - Set Piece Aquisition.png
+│   ├── Torneo UNRMDP - Set Piece Launches.png
+│   ├── Torneo UNRMDP - Breaks.png
+│   ├── Torneo UNRMDP - Discipline.png
+│   └── torneo2025video.mp4
 │
 ├── docs/
 │   ├── project_overview.md
@@ -85,8 +95,7 @@ rugby-performance-analytics-los-cardos/
 │
 ├── README.md
 └── LICENSE
-```
----
+```---
 
 ## 🚀 Next Steps
 - Full automation of the ETL pipeline  
